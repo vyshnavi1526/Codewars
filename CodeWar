@@ -1,0 +1,7 @@
+from collections import Counter
+
+def order_food(lst):
+    meal_preferences = map(lambda developer: developer['meal'], lst)
+    meal_counts = dict(Counter(meal_preferences))
+
+    return meal_counts
